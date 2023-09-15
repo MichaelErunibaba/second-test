@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" href="car.jpg" type="image/x-icon">
+    <title>hello world</title>
+</head>
+<body>
+    <h1><i>hello world!</i> Michael Eru's is back</h1> <br> <p style="color: blue;">Let's blow the shii <!--<big>-->up<!--</big>--> H<sub>2</sub>0</p> 
+    <!-- BACK TO THE DAYS OF COMMENTING;- The three stages in a page format: head{meta, title, icon etc.} body{header:to store navigational tools etc, main, footer etc..} footer{copyright etc..}-->
+
+    <!--if the heading(h2) of the nav links is not inside the nav tag, this is how to write the labeling but if it is not then it will be <nav aria-label="primary-navigation"></nav>  -->   
+    <nav aria-labelledby="primary-navigation">
+        <h3 id="primary-navigation">primary navigation</h3>
+        <ul>
+            <li><a href="about.html">about</a></li>
+            <li><a href="">loremgee</a></li>
+            <li><a href="home.com">Content page</a></li>
+        </ul> 
+    </nav>
+    <br>
+    <article><h2>THINGS TO GET DONE</h2> I must write and publish an article. inside the article i might have sections e.g <section><h2>how Africa can move forward</h2></section> <aside>an aside tag is an advertisement Tag but more of that is used in css</aside></article>
+
+    <p>using Links <br>how to link some other pages to your website: <a href="https://www.google.com" target="_blank"> google's homepage icon
+        </a> <br>linking another HTML page provided it the same directive: <a href="index.html."> page 24</a> <br> linking a picture; <a href="cat.jpg">cat</a>
+        but to generate a picture from an external source will be<!-- <img src="image link" alt="display whatever lol"> -->
+        <br><!--Embedding a youtube video link--> <iframe width="300" height="200" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--frameborder for the embeded link above should be done by css instead, i mean the (frameborder="0") -->
+
+    </p><!--h1 etc should come before paragrah tag-->
+
+    <hr>
+    <dl>
+        <dt>places i would like to go</dt>
+        <dd>The North Pole, because the place is very cold and it close to russia</dd>
+    </dl>
+    <dl>
+        <dt>places i may like to go</dt>
+        <dd>The South Pole, because the place is very cold and it close to South Africa</dd>
+    </dl>
+    <textarea name="share your thought" cols="30" rows="10"> Let Us Meet You</textarea>
+    <!--to create a radio button--> <input name="btn" type="radio"> <input name="btn" type="radio"> <!--submit--> <input type="submit"> <br>
+    <!--to create an iframe--> <iframe src="http://giraffeacademy.com/" width="200" height="200"></iframe>
+    <br>
+    <!--i need to put that alternate word inside the context of the iframe or else what will happen if the giraffe academy site is not showing again?-->
+    &nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam praesentium esse, at veniam, quo blanditiis aperiam voluptas impedit placeat deleniti, corrupti eius? Sunt reiciendis <em> consequuntur quisquam quis repudiandae</em> ut blanditiis? <!--&nbsp is for blank space-->
+    <br>
+    <hr>
+    <br>
+    <form action="https://httpbin.org/get/" method="get">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <div> <!--the div container will make the forms have appropriate spaces within them-->
+                <label for="name">First Name</label>
+                <input type="text" name="first-name" id="name" autocomplete="on" placeholder="your name" required autofocus><!--please note that there can be only one autofocus on a page--><!--autocomplete save the previous input-->
+            </div>
+            <br>
+            <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastName" id="lastname"><!--two id names must not be repeated in different divs, coz it will cr8 duplicate if so.-->
+            </div>
+            <!--creating a select option-->
+            <div>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender"><!--Note that an ID must not be empty thats im removing it from here-->
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="other" selected>other</option><!--the selected attribute is to show the default option-->
+                </select>
+            </div>
+            <div>
+                <label for="drinks">Drinks</label>
+                <select name="Softdrinks" id="drinks" multiple size="5">
+                    <optgroup label="foreign">
+                        <option value="coke">coke</option>
+                        <option value="fanta">fanta</option>
+                        <option value="sprite">sprite</option>
+                        <option value="maltina">maltina</option>
+                    </optgroup>
+                    <optgroup label="local">
+                        <option value="bigi apple">bigi apple</option>
+                        <option value="bigi tropical">bigi tropical</option>
+                        <option value="bigi chapman">bigi chapman</option>
+                        <option value="bigi tamarind">bigi tamarind</option>
+                    </optgroup>
+                    <option value="other">other</option>
+                </select>
+                <p>
+                    <label for="BEER">BEER</label>
+                    <input type="text" name="Softdrinks" id="BEER" list="beer-list">
+                    <datalist id="beer-list">
+                        <option value="Trophy"></option>
+                        <option value="Goldberg"></option>
+                        <option value="star">sprite</option>
+                        <option value="heineken">maltina</option>
+                    </datalist><!--the datalist will enable you to type in the list that has different options-->
+                </p>
+
+            </div>
+            <div>
+                <label for="age">age:</label>
+                <input type="number" name="age" value="40" id="age">
+            </div>
+            <div>
+                <label for="birthday">birthday:</label>
+                <input type="date" name="age" id="birthday">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                <label for="decade">favourite decade;</label>
+                <input type="number" name="decade" id="decade" value="1980" min="1950" max="2022" step="10">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>What is your favourite food</legend>
+            <p>
+                <input name="btn" type="radio" id="rice" value="rice"> 
+                <label for="rice">RICE</label>
+            </p>
+            <p>
+                <input name="btn" type="radio" id="pounded-yam" value="pounded yam"> 
+                <label for="pounded-yam">Pounded Yam</label>
+            </p>
+            <p>
+                <input name="btn" type="radio" id="jollof-rice"> 
+                <label for="jollof-rice">Jollof Rice</label>
+            </p><!--the value of name attribute in a radio selection must be the same-->
+        </fieldset>
+        <fieldset>
+            <legend>what are your favourite beer</legend>
+            <p>
+                <input type="checkbox" name="beer" id="smirnof" value="smirnof">
+                <label for="smirnof">SMIRNOF ICE</label>
+            </p>
+            <p>
+                <input type="checkbox" name="beer" id="snaps" value="snaps">
+                <label for="snaps">SNAPS</label>
+            </p>
+            <p>
+                <input type="checkbox" name="beer" id="calor-rossi" value="calor-rossi">
+                <label for="calor-rossi">Calo Rossi</label>
+            </p><!--checkbox enables you to check more than one option at a time-->
+        </fieldset>
+        <fieldset>
+            <legend>Drop a note for me</legend><br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">submit</button>
+        <button type="submit" formaction="https://httpsbin.org/post" formmethod="post">Post</button><!--this is used if you want the form to post to another site--><!--you dont want to send a sensitive information with a get request. post is better-->
+        <!--<input type="submit" value="submit">
+        <input type="submit" value="overwrite">
+        <input type="reset" value="reset">-->
+    </form>
+    <hr>
+    <!--quotations ; using a blockquote to quote-->
+    <blockquote cite="https://traversymedia.com/">
+        lorem is here, was once here and he will always be here Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, velit?
+    </blockquote>
+    <!--abbreviation-->
+    <abbr title="World Wide Web">WWW</abbr>
+    <address>
+        <br>plot 20 
+        <br>Tokunbo Disu, Magodo,
+        <br>Isheri, Lagos.
+    </address>
+    
+    
+    <section id="loremgee">
+        <h2>Ashtag gives problem</h2>
+        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem tempore neque ab est! Dicta facilis veritatis necessitatibus incidunt rem? Ducimus iusto totam optio incidunt, autem doloremque nulla, quaerat voluptate placeat odio magni temporibus quas similique repellendus. Dolorum vitae possimus quisquam, repellat laborum nobis quos aut eveniet qui, ipsa aliquid rerum hic. Quis itaque explicabo molestias magnam consequuntur rem dolore! Sit optio, enim recusandae doloribus molestiae pariatur ducimus qui corrupti autem fuga voluptatem, ea aliquid? -->
+    </section><!--alt+shft+a to comment an highlighted text-->
+    <br><br>
+    <aside>
+        <details>
+            <summary>where i could possibly go to</summary>
+            <p>lagos island, Abuja, etc before <time datetime="march">march</time> </p>
+            <p>ASIA, RUSSIA, <mark>Arctic</mark>  <time datetime="30">before 30th october</time>  </p>
+        </details>
+    </aside>
+    <br><br>
+    <table>
+        <caption>FOOD MENU</caption>
+        <thead>
+            <tr>
+                <th scope="col">&nbsp;</th><th scope="col">Monday</th> <th scope="col">Tuesday</th> <th>Wednesday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td><td>YAM</td> <td>Garri</td> <td>beans</td>
+            </tr>
+            <tr>
+                <td>2</td><td>porridge</td> <td>spagheti</td> <td>Semolina</td>
+            </tr>
+            <tr>
+                <td>3</td><td>bread</td> <td>Moin moin</td> <td>eba</td>
+            </tr>
+            <tr>
+                <td rowspan="2">4</td><td>Porridge</td><td>indomie</td><td>Rice</td>
+            </tr>
+            <tr>
+                <td>Akara</td><td>indomie</td><td>Pupuru</td>
+            </tr>
+            <tr>
+                <td>5</td><td>bread</td> <td>Amala</td><td>pounded yam</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Eat good Food</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><br>
+    <hr>
+    
+    <!--<a href="ashtag">back to the top</a> where is the ash tag-->
+    <a href="/">back to home page</a>
+    <footer id="main-footer">
+        <a href="about.html">about</a>
+        <p>copyright &copy; 2023, mywebs </p>
+    </footer>
+
+</body>
+</html>
